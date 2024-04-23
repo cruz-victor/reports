@@ -18,59 +18,181 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
+		<band height="82" splitType="Stretch">
 			<textField>
-				<reportElement x="400" y="10" width="138" height="16" uuid="8b4930c8-5945-4585-b425-751f288e9321"/>
+				<reportElement x="280" y="0" width="292" height="30" forecolor="#0754E3" uuid="8b4930c8-5945-4585-b425-751f288e9321"/>
+				<textElement textAlignment="Right">
+					<font fontName="poppins&#xD;&#xA;" size="18"/>
+				</textElement>
 				<textFieldExpression><![CDATA["Dra. Grace Adriana C."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="406" y="30" width="138" height="16" uuid="d347a1a2-e47a-4b5a-85f5-787d620354c3"/>
+				<reportElement x="280" y="30" width="292" height="30" forecolor="#808080" uuid="d347a1a2-e47a-4b5a-85f5-787d620354c3"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right">
+					<font fontName="poppins&#xD;&#xA;" size="14"/>
+				</textElement>
 				<textFieldExpression><![CDATA["Medico General"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="410" y="50" width="138" height="16" uuid="b4a6e49f-b98b-4d96-96b6-c110741b74d0"/>
+				<reportElement x="280" y="48" width="292" height="28" forecolor="#808080" uuid="b4a6e49f-b98b-4d96-96b6-c110741b74d0"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right">
+					<font fontName="poppins&#xD;&#xA;" size="13"/>
+				</textElement>
 				<textFieldExpression><![CDATA["Matricula: 123456789l"]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="1" y="1" width="80" height="80" uuid="6e19ed50-6cb4-43f7-8730-86d5c811757b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["/img/logoPharmacy.png"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="111" splitType="Stretch">
+		<band height="80" splitType="Stretch">
+			<rectangle radius="4">
+				<reportElement x="0" y="1" width="572" height="70" uuid="6a2ee541-8871-49fa-b4a2-7bb81678b638"/>
+				<graphicElement>
+					<pen lineWidth="0.05" lineColor="#797979"/>
+				</graphicElement>
+			</rectangle>
 			<staticText>
-				<reportElement x="27" y="16" width="100" height="30" uuid="ef815bbe-4ee7-4661-99eb-1efb87c93764"/>
+				<reportElement x="0" y="8" width="120" height="16" uuid="ef815bbe-4ee7-4661-99eb-1efb87c93764"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="poppins" isBold="true"/>
+				</textElement>
 				<text><![CDATA[Nombre del Paciente:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="27" y="46" width="100" height="30" uuid="429f4414-b818-4b2b-b5f6-8529dbbd5d1b"/>
+				<reportElement x="0" y="27" width="120" height="16" uuid="429f4414-b818-4b2b-b5f6-8529dbbd5d1b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="poppins" isBold="true"/>
+				</textElement>
 				<text><![CDATA[Dirección:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="20" y="80" width="100" height="30" uuid="f6d75a6d-26ab-44a7-8f0a-52e83db0fe59"/>
+				<reportElement x="0" y="46" width="120" height="16" uuid="f6d75a6d-26ab-44a7-8f0a-52e83db0fe59">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="poppins" isBold="true"/>
+				</textElement>
 				<text><![CDATA[Nro. de Docuemnto:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="140" y="20" width="138" height="16" uuid="9aebd9d4-8552-4b20-a4b0-5740418e68b9"/>
+				<reportElement x="122" y="8" width="450" height="16" uuid="9aebd9d4-8552-4b20-a4b0-5740418e68b9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
 				<textFieldExpression><![CDATA["Juan Quintanilla"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="140" y="47" width="320" height="16" uuid="3da84eab-9b94-4124-89f0-a66909de9ac7"/>
+				<reportElement x="122" y="27" width="450" height="16" uuid="3da84eab-9b94-4124-89f0-a66909de9ac7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
 				<textFieldExpression><![CDATA["Calle 12 entre Indaburo y Zenegal (Los Angeles)"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="140" y="80" width="138" height="16" uuid="aed58a3c-3b73-4625-89d3-5f203c83c0b1"/>
+				<reportElement x="122" y="46" width="450" height="16" uuid="aed58a3c-3b73-4625-89d3-5f203c83c0b1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
 				<textFieldExpression><![CDATA["123456789"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="51" splitType="Stretch">
+		<band height="26" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="10" width="100" height="30" uuid="9f306ae7-3561-4e9d-88e9-2ce2b85a83a1"/>
+				<reportElement mode="Opaque" x="0" y="1" width="150" height="25" forecolor="#FFFFFF" backcolor="#1F96FF" uuid="9f306ae7-3561-4e9d-88e9-2ce2b85a83a1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
 				<text><![CDATA[Medicamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="1" width="90" height="25" forecolor="#FFFFFF" backcolor="#1F96FF" uuid="1b9f66c8-e702-4e74-9190-d0f4d6d64869">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
+				<text><![CDATA[Presentación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="240" y="1" width="60" height="25" forecolor="#FFFFFF" backcolor="#1F96FF" uuid="232d4cd4-c7d9-44bd-a0e9-6f7e3ecfde41">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="300" y="1" width="272" height="25" forecolor="#FFFFFF" backcolor="#1F96FF" uuid="556c1f75-5166-4be5-b76c-12893c85ca90">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="poppins"/>
+				</textElement>
+				<text><![CDATA[Posologia]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch"/>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="150" height="16" uuid="6ab2c418-78ce-404a-b83b-8ad52b27bdff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Acetaminofen"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="90" height="16" uuid="6026a8bb-4dfe-4ce0-b0b3-670cdfa285fd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tabletas"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="60" height="16" uuid="b289a452-6224-4d07-9fa7-23858090e0bd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA["2"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="300" y="0" width="272" height="16" uuid="76d6a8f0-b3a3-4e27-afad-26df535a21ff">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="5" rightPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="poppins"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tomar una pastilla de este medicamente cada 8 horas."]]></textFieldExpression>
+			</textField>
+		</band>
 	</detail>
 	<columnFooter>
 		<band height="45" splitType="Stretch"/>
