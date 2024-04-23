@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyReports/Blank_A4.jrxml&apos; to &apos;receta_medica.jrxml&apos;" description="Rename resource &apos;Blank_A4.jrxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blank_A4.jrxml" name="receta_medica.jrxml" stamp="1713909784969" updateReferences="true"/>
+</session>
