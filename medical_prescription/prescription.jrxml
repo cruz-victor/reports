@@ -11,6 +11,15 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="MEDICAL_NAME" class="java.lang.String"/>
+	<parameter name="MEDICAL_SPECIALTY" class="java.lang.String"/>
+	<parameter name="MEDICAL_CODE" class="java.lang.Integer"/>
+	<parameter name="PATIENT_NAME" class="java.lang.String"/>
+	<parameter name="PATIENT_ADDRESS" class="java.lang.String"/>
+	<parameter name="PATIENT_DOCUMENT_NUMBER" class="java.lang.Integer"/>
+	<parameter name="CLINIC_NAME" class="java.lang.String"/>
+	<parameter name="CLINIC_PHONE" class="java.lang.String"/>
+	<parameter name="CLINIC_ADDRESS" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -24,7 +33,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="poppins&#xD;&#xA;" size="18"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Dra. Grace Adriana C."]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{MEDICAL_NAME}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="30" width="292" height="30" forecolor="#808080" uuid="d347a1a2-e47a-4b5a-85f5-787d620354c3"/>
@@ -32,7 +41,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="poppins&#xD;&#xA;" size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Medico General"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{MEDICAL_SPECIALTY}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="280" y="48" width="292" height="28" forecolor="#808080" uuid="b4a6e49f-b98b-4d96-96b6-c110741b74d0"/>
@@ -40,7 +49,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="poppins&#xD;&#xA;" size="13"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Matricula: 123456789l"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{MEDICAL_CODE}]]></textFieldExpression>
 			</textField>
 			<image>
 				<reportElement x="1" y="1" width="80" height="80" uuid="6e19ed50-6cb4-43f7-8730-86d5c811757b">
@@ -91,7 +100,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="poppins"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Juan Quintanilla"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{PATIENT_NAME}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="122" y="27" width="450" height="16" uuid="3da84eab-9b94-4124-89f0-a66909de9ac7">
@@ -100,7 +109,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="poppins"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Calle 12 entre Indaburo y Zenegal (Los Angeles)"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{PATIENT_ADDRESS}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="122" y="46" width="450" height="16" uuid="aed58a3c-3b73-4625-89d3-5f203c83c0b1">
@@ -109,7 +118,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="poppins"/>
 				</textElement>
-				<textFieldExpression><![CDATA["123456789"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{PATIENT_DOCUMENT_NUMBER}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
@@ -205,7 +214,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="poppins&#xD;&#xA;" size="15" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Recetario Consultorio Medico San Jose"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{CLINIC_NAME}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="1" y="21" width="570" height="30" forecolor="#808080" uuid="404df5d3-f3b7-4964-90cc-78c034b2b688"/>
@@ -213,7 +222,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="poppins&#xD;&#xA;" size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Calle Benemeritos entre San Jose y Pichincha"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{CLINIC_ADDRESS}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="1" y="39" width="570" height="30" forecolor="#808080" uuid="6660ff3e-6558-495f-b500-af4626af32f3"/>
@@ -221,7 +230,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="poppins&#xD;&#xA;" size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["(+591) 76262344"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{CLINIC_PHONE}]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy">
 				<reportElement x="1" y="69" width="100" height="18" uuid="cae154af-6c4e-4014-9afe-c2f6bce59393"/>
@@ -257,7 +266,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="poppins"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Grace Adriana C."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["DR: "+$P{MEDICAL_NAME}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
