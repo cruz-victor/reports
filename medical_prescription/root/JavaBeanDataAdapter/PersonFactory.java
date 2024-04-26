@@ -1,3 +1,5 @@
+package root.JavaBeanDataAdapter;
+
 import java.util.Collection;
 import java.util.Vector;
 

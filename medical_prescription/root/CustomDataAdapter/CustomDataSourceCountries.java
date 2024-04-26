@@ -1,3 +1,5 @@
+package root.CustomDataAdapter;
+
 public class CustomDataSourceCountries implements JRDataSource{
 	
 	private Object[][] countriesList;

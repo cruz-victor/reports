@@ -1,3 +1,5 @@
+package root.JavaBeanDataAdapter;
+
 public class Person{
 	private String name;
 	private String lastName;
