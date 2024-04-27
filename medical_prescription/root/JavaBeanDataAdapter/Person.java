@@ -29,6 +29,6 @@ public class Person{
 	
 	
 	public setLastName(String lastName) {
-		this.lastName=lastName;
+		this.lastName=lastName;		
 	}
 }
