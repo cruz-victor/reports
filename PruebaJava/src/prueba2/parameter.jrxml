@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="parameter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e489b61f-95de-40e2-819e-8f103b181475">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="TEXT_STRING" class="java.lang.String"/>
+	<parameter name="NUMERIC_VALUE" class="java.lang.Integer"/>
+	<parameter name="TIMESTAMP" class="java.util.Date"/>
+	<parameter name="IMAGE" class="java.awt.Image" evaluationTime="Early">
+		<defaultValueExpression><![CDATA[new javax.swing.ImageIcon("C:\\Users\\VIC\\JaspersoftWorkspace\\medical_prescription\\img\\logoPharmacy.png").getImage();]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="1" width="570" height="30" uuid="2d2cca0e-cc2c-4700-b6a2-cee3820a1bde"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poopins&#xD;&#xA;poppins&#xD;&#xA;" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PARAMETROS (PARAMETERS)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="161" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="108" height="30" uuid="f46a2298-48e9-40b3-a248-b3ce0eddb44e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Poppins&#xD;&#xA;" size="11"/>
+				</textElement>
+				<text><![CDATA[Cadena de texto:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="0" width="456" height="30" uuid="948af8de-cdb6-4bb8-8794-9a95b99dfa4d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TEXT_STRING}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="31" width="108" height="30" uuid="869a2ae8-deb5-497b-80ff-bbfc38fa608a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Poppins&#xD;&#xA;" size="11"/>
+				</textElement>
+				<text><![CDATA[Valor numerico:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="31" width="456" height="30" uuid="d369f999-4351-44a5-a204-5a9f66f0893c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{NUMERIC_VALUE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="62" width="108" height="30" uuid="01ec23f5-613d-46b4-a0fb-f1fd95653aef"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Poppins&#xD;&#xA;" size="11"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="62" width="456" height="30" uuid="653ad34c-493f-4bc2-9562-02f0045749b1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TIMESTAMP}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="92" width="108" height="30" uuid="2a902e3a-0900-4533-b899-e643643ff964"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Poppins&#xD;&#xA;" size="11"/>
+				</textElement>
+				<text><![CDATA[Imagen:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="113" y="94" width="56" height="55" uuid="230c6705-2cb3-4cd6-a875-c05071e08ac3"/>
+				<imageExpression><![CDATA[$P{IMAGE}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="34" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="38" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="28" splitType="Stretch"/>
+	</summary>
+</jasperReport>
