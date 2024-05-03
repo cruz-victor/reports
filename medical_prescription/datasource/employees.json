@@ -1,0 +1,76 @@
+{
+  "code":"abc123",
+  "id":123,
+  "employees": [
+    {
+      "document_number": "12345678",
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "hours_worked": 40,
+      "hourly_rate": 15.50
+    },
+    {
+      "document_number": "98765432",
+      "first_name": "María",
+      "last_name": "García",
+      "hours_worked": 35,
+      "hourly_rate": 18.25
+    },
+    {
+      "document_number": "45678901",
+      "first_name": "Pedro",
+      "last_name": "López",
+      "hours_worked": 45,
+      "hourly_rate": 12.75
+    },
+    {
+      "document_number": "23456789",
+      "first_name": "Ana",
+      "last_name": "Martínez",
+      "hours_worked": 38,
+      "hourly_rate": 20.00
+    },
+    {
+      "document_number": "34567890",
+      "first_name": "Luis",
+      "last_name": "Ramírez",
+      "hours_worked": 42,
+      "hourly_rate": 16.80
+    },
+    {
+      "document_number": "56789012",
+      "first_name": "Laura",
+      "last_name": "Díaz",
+      "hours_worked": 37,
+      "hourly_rate": 22.50
+    },
+    {
+      "document_number": "78901234",
+      "first_name": "Carlos",
+      "last_name": "Sánchez",
+      "hours_worked": 40,
+      "hourly_rate": 14.00
+    },
+    {
+      "document_number": "89012345",
+      "first_name": "Sofía",
+      "last_name": "Castillo",
+      "hours_worked": 36,
+      "hourly_rate": 19.75
+    },
+    {
+      "document_number": "01234567",
+      "first_name": "Elena",
+      "last_name": "Gómez",
+      "hours_worked": 39,
+      "hourly_rate": 17.30
+    },
+    {
+      "document_number": "32109876",
+      "first_name": "Mario",
+      "last_name": "Juárez",
+      "hours_worked": 43,
+      "hourly_rate": 15.90
+    }
+  ]
+}
