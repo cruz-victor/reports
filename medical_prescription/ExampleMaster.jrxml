@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExampleDynamicParametersMultipleListBeanCollection" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" isIgnorePagination="true" uuid="76c11740-1cd1-4e9f-9094-fcafd9706047">
+	<parameter name="PARAM_DS" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="companyDtos" class="java.util.List"/>
+	<field name="programmingDtos" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="2" width="550" height="30" uuid="c6fe8491-3626-4a7b-84db-53cef8d27653"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Custom Data Report Using JRBeanCollectionDataSource"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="32" width="550" height="28" uuid="d056ea97-918c-41ed-805d-021bd0eac6e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PARAM_DS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<frame>
+				<reportElement x="0" y="0" width="570" height="60" uuid="a958dffc-e280-4787-b1cb-5f36c4888a28">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textField>
+					<reportElement x="0" y="0" width="569" height="20" uuid="81676959-93ff-4002-a252-efec97f83af4"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Top 5 IT companies in the world."]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="60" width="560" height="60" uuid="73ae28cd-815e-40a9-b93d-62a877d9e732">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<subreport>
+						<reportElement x="0" y="20" width="560" height="40" uuid="d3bb7aa3-1e88-492b-bd53-5576bb449fa3">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{programmingDtos})]]></dataSourceExpression>
+						<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"ExampleSubreportProgramming.jasper"]]></subreportExpression>
+					</subreport>
+				</frame>
+				<textField>
+					<reportElement x="0" y="60" width="560" height="20" uuid="d21c617e-238f-4c68-b9bc-ff3826c6af4d">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA["Top 5 programming languages in the world."]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement x="0" y="21" width="560" height="40" uuid="d0868d41-3146-40cc-9490-0eb61f74e883">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{companyDtos})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"ExampleSubreportCompanies.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="60">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="10" width="559" height="21" uuid="27ddf0e0-01b9-48b4-9779-2f3506670463"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["End of report"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

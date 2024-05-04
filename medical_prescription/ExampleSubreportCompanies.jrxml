@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExampleCompaniesSubreport" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="41df1a47-afa7-417b-8ba3-3a652e6eb43e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="no" class="java.lang.Integer"/>
+	<field name="profit" class="java.lang.String"/>
+	<field name="revenue" class="java.lang.String"/>
+	<columnHeader>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="70" y="0" width="236" height="20" uuid="644f643c-7871-40e7-9607-01ebc4c22f5e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c8a1ccc-d446-4230-ae6a-eb2c8fb60560"/>
+				</reportElement>
+				<text><![CDATA[companyName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="0" width="60" height="20" uuid="38493261-ab8c-4572-8d70-f71f684d547f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61b89712-2ca0-4bc9-8ee2-40f515c2407d"/>
+				</reportElement>
+				<text><![CDATA[no]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="0" width="153" height="20" uuid="71917e76-a08a-45ee-8832-e7ab64ea93b2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6358ed57-eacc-49ad-843d-0a41f2b77e99"/>
+				</reportElement>
+				<text><![CDATA[profit (billon)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="0" width="153" height="20" uuid="3c8ffeda-836f-4d87-ad21-8069e516602f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d561a185-c255-4b46-96cf-abc3079013cd"/>
+				</reportElement>
+				<text><![CDATA[revenue (billon)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="70" y="0" width="236" height="30" uuid="59b59e57-47fa-46a7-9977-15215713c771">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c8a1ccc-d446-4230-ae6a-eb2c8fb60560"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="0" width="60" height="30" uuid="01067787-d09a-48bd-baa9-0d99d991571c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61b89712-2ca0-4bc9-8ee2-40f515c2407d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="0" width="153" height="30" uuid="8f56ea9d-6b02-47e6-befc-1be1de48dc8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6358ed57-eacc-49ad-843d-0a41f2b77e99"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{profit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="153" height="30" uuid="885e4aa2-9399-4a0e-93a1-e66344d0afcc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d561a185-c255-4b46-96cf-abc3079013cd"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{revenue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
