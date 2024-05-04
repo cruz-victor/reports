@@ -27,9 +27,11 @@
 	</field>
 	<variable name="FULL_NAME" class="java.lang.String">
 		<variableExpression><![CDATA[$F{first_name}+" "+$F{last_name}]]></variableExpression>
+		<initialValueExpression><![CDATA[new String("-")]]></initialValueExpression>
 	</variable>
 	<variable name="TOTAL_PAY" class="java.lang.Double">
 		<variableExpression><![CDATA[$F{hours_worked}+$F{hourly_rate}]]></variableExpression>
+		<initialValueExpression><![CDATA[new Double(0)]]></initialValueExpression>
 	</variable>
 	<background>
 		<band splitType="Stretch"/>
