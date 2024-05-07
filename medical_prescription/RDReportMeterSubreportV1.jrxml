@@ -409,9 +409,8 @@
 			</textField>
 			<subreport>
 				<reportElement x="298" y="270" width="263" height="110" uuid="2396af82-94d6-4f0e-9771-659bdea4edaa"/>
-				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{detailedData.consumption.energyConsumption.monthly})
-]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"consumptionEnergyConsumptionMontly.jasper"]]></subreportExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{detailedData.consumption.energyConsumption.monthly})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"RDReportMeterSubreportV1ConsumpionSubReport.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>

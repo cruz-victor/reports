@@ -410,7 +410,7 @@
 			<subreport>
 				<reportElement x="300" y="280" width="264" height="100" uuid="49ad0a27-9e83-4aeb-b697-b879f483d2c9"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{detailedData.consumption.energyConsumption.monthly})]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"ConsumpionSubReportV2.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"RDReportMeterSubreportV2ConsumpionSubReport.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>
