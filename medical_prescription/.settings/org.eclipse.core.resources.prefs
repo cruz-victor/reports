@@ -1,11 +1,14 @@
 eclipse.preferences.version=1
 encoding/<project>=UTF-8
+encoding/ConsumpionSubReportV2.jrxml=UTF-8
 encoding/EmployeeSalaryPayroll.jrxml=UTF-8
 encoding/ExampleMaster.jrxml=UTF-8
 encoding/RDEmployeesTableDSTwoParamDS.jrxml=UTF-8
 encoding/RDEmployeesTableOneParamDS.jrxml=UTF-8
 encoding/RDEmployeesTableTwoParamDS.jrxml=UTF-8
+encoding/RDReportDataWithObjects.jrxml=UTF-8
 encoding/RDReportDataWithObjectsAndSubreport.jrxml=UTF-8
+encoding/RDReportDataWithObjectsV2.jrxml=UTF-8
 encoding/consumptionEnergyConsumptionMontly.jrxml=UTF-8
 encoding/jsonManipulation.jrxml=UTF-8
 encoding/parameter.jrxml=UTF-8
