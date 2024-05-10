@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ConsumpionSubReportV2" pageWidth="264" pageHeight="100" columnWidth="264" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6fa7984b-88ef-441a-bfca-a5a8705dd922">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RDReportMeterSubreportV2ConsumpionSubReport" pageWidth="264" pageHeight="250" columnWidth="264" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6fa7984b-88ef-441a-bfca-a5a8705dd922">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -19,7 +19,7 @@
 	<field name="consumption" class="java.lang.Double"/>
 	<field name="unit" class="java.lang.String"/>
 	<detail>
-		<band height="20" splitType="Stretch">
+		<band height="250" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField>
 				<reportElement x="0" y="0" width="50" height="20" uuid="f406b9be-6558-46b7-817a-f1e70220f016">
@@ -49,6 +49,31 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{unit}]]></textFieldExpression>
 			</textField>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="10" y="60" width="242" height="170" uuid="162f7230-45f8-41a5-83c8-49ccef561983"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{month}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{consumption}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
 		</band>
 	</detail>
 </jasperReport>
