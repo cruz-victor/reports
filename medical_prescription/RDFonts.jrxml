@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RDFonts" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0299be91-e6a6-46b7-942d-4e873e494bca">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="270" y="0" width="300" height="41" uuid="b498dc8d-a109-4423-a6d3-b525e183c127"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="15"/>
+				</textElement>
+				<text><![CDATA[Fuente Poppins]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="40" width="300" height="42" uuid="e6348e72-ea8e-4cff-a35e-e40e0239a633"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Poppins" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fuente Poppins Bold]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="270" height="42" uuid="1b7d81e3-60c0-4de9-af55-7942dd2a4b50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto" size="15"/>
+				</textElement>
+				<text><![CDATA[Fuente Roboto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="270" height="41" uuid="48ffa686-09d5-458b-9fa8-02c863f8b00c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Katherine Free" size="15"/>
+				</textElement>
+				<text><![CDATA[Fuente Katherine Free]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>
