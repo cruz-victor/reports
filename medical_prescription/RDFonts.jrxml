@@ -8,7 +8,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="82" splitType="Stretch">
+		<band height="128" splitType="Stretch">
 			<staticText>
 				<reportElement x="270" y="0" width="300" height="41" uuid="b498dc8d-a109-4423-a6d3-b525e183c127"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -33,9 +33,16 @@
 			<staticText>
 				<reportElement x="0" y="0" width="270" height="41" uuid="48ffa686-09d5-458b-9fa8-02c863f8b00c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Katherine Free" size="15"/>
+					<font fontName="Katherine" size="15"/>
 				</textElement>
 				<text><![CDATA[Fuente Katherine Free]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="83" width="270" height="42" uuid="31c98c57-c717-4cb8-bcb8-0691bd953411"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DS-Digital" size="15"/>
+				</textElement>
+				<text><![CDATA[Fuente DS-Digital]]></text>
 			</staticText>
 		</band>
 	</title>
