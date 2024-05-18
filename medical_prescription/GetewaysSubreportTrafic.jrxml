@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GetewaysSubreportTrafic" pageWidth="170" pageHeight="170" columnWidth="170" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="18dc8a42-9592-4ca5-8e96-67f1f0561734">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="year" class="java.lang.Integer"/>
+	<field name="month" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="month"/>
+	</field>
+	<field name="day" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="day"/>
+	</field>
+	<field name="uplinks" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="uplinks"/>
+	</field>
+	<field name="downlinks" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="downlinks"/>
+	</field>
+	<field name="unit" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="unit"/>
+	</field>
+	<title>
+		<band height="157" splitType="Stretch">
+			<barChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="0" y="0" width="151" height="157" uuid="1e9d1611-9219-4283-b902-b8072682e453"/>
+					<chartTitle position="Top">
+						<font fontName="Poppins" size="8"/>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend>
+						<font fontName="Poppins" size="6"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Dowlink "]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{day}+"/"+$F{month}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{uplinks}]]></valueExpression>
+						<labelExpression><![CDATA[$F{unit}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#0D0D0D"/>
+					</plot>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#939DB2" axisLineColor="#000000">
+							<labelFont>
+								<font fontName="Poppins" size="6"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Poppins" size="7"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#939DB2" axisLineColor="#000000">
+							<labelFont>
+								<font size="5"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Poppins" size="5"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</title>
+</jasperReport>
